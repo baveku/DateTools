@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "DateToolsSwift",
+    defaultLocalization: "en",
     platforms: [.iOS(.v10)],
     products: [
         .library(name: "DateToolsSwift",
@@ -13,6 +14,6 @@ let package = Package(
     targets: [
         .target(name: "DateToolsSwift",
                 path: "DateToolsSwift/DateTools", 
-                resources: [.process("Resources", localization: .default)])
+                resources: [.process("Resources", localization: .base)])
     ]
 )
