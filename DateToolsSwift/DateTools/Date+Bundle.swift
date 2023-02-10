@@ -12,7 +12,7 @@ public extension Bundle {
     
     class func dateToolsBundle() -> Bundle? {
         let assetPath: String?
-#if SPM
+#if SWIFT_PACKAGE
         assetPath = Bundle.module.resourcePath
 #else
         assetPath = Bundle(for: Constants.self).resourcePath

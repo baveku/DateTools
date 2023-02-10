@@ -22,7 +22,7 @@
 
 #ifndef DateToolsLocalizedStrings
 
-#ifdef SPM
+#ifdef SWIFT_PACKAGE
 #define DateToolsLocalizedStrings(key) \
 NSLocalizedStringFromTableInBundle(key, @"DateTools", [NSBundle bundleWithPath:[[SWIFTPM_MODULE_BUNDLE resourcePath] stringByAppendingPathComponent:@"DateTools.bundle"]], nil)
 #else

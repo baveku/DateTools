@@ -21,14 +21,14 @@ let package = Package(
             name: "DateToolsSwift",
             path: "DateToolsSwift/DateTools",
             resources: [.copy("DateTools.bundle")],
-            swiftSettings: [.define("SPM")]
+            swiftSettings: [.define("SWIFT_PACKAGE")]
         ),
         .target(
             name: "DateToolsObjc",
             path: "DateTools/DateTools",
             resources: [.copy("DateTools.bundle")],
             publicHeadersPath: ".",
-            cSettings: [.define("SPM")]
+            cSettings: [.define("SWIFT_PACKAGE")]
         )
     ]
 )
